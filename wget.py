@@ -11,9 +11,9 @@ download_complete = False
 lock = threading.Lock()  # Блокировка для синхронизации потоков
 
 def download_file(url, filename):
-    """
-    Скачивание файла по HTTP.
-    """
+    
+    # Скачивание файла по HTTP.
+   
     global downloaded_bytes, download_complete
 
     # Парсинг URL
@@ -48,9 +48,9 @@ def download_file(url, filename):
         download_complete = True
 
 def monitor_progress():
-    """
-    Мониторинг прогресса загрузки.
-    """
+    
+    # Мониторинг прогресса загрузки.
+   
     global downloaded_bytes, download_complete
 
     while True:
